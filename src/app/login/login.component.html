@@ -1,0 +1,24 @@
+<div class="login-containers">
+    <!-- <img class="films" src="assets/fi.png" alt=""> -->
+    <div class="logo">Movies</div>
+    <div class="desc">
+        Movies are a captivating art form that transport us to diverse worlds, evoke powerful emotions, and ignite our imaginations.
+         Through the interplay of storytelling, visuals, and sound, films have the unique ability to capture the essence of human experiences, 
+         both real and fantastical. They serve as a mirror reflecting society's values, dreams, and challenges, while also offering an escape into
+          realms of creativity and adventure. 
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="pword" >Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)]="password">
+        </div>
+        <div class="btn btn-container">
+            <div class="error">{{error}}</div>
+            <button class="btn btn-dark" (click)="login()">Submit</button>
+        </div>
+    </div>
+</div>
